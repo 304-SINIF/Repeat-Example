@@ -106,6 +106,8 @@ Tanımlama formülleri
 	
 	}
 
+Not: Döngüler içerisinde break ve continue keyworleri kullanılabilir. Eğer döngü içerisinde "break" keywordü ile karşılaşıldıysa döngü biter. Eğer "continue" ile karşılaşıldıysa, döngü o turu atlar.
+
 7.0
 	Birden fazla değer tutmak için kullanılır
 	<var_type>[] <var_name> = new <var_type>[<arr_length>];
