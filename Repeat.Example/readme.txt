@@ -105,3 +105,15 @@ Tanımlama formülleri
 	{
 	
 	}
+
+7.0
+	Birden fazla değer tutmak için kullanılır
+	<var_type>[] <var_name> = new <var_type>[<arr_length>];
+	<var_type>[] <var_name> = { <value1>, <value2>... };
+
+	7.1
+		Array barındıran array
+
+	7.2
+		İki boyutlu array
+	<var_type>[,] <var_name> = new <var_type>[<row_length>, <col_length>];

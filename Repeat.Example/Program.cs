@@ -183,12 +183,24 @@ namespace Repeat.Example
             //while (i < 10);
 
             //// 6.3
-            
+
             //for (int i = 0; i < 10; i++)
             //{
 
             //}
 
+            #endregion
+
+            #region Arrays (7.0)
+
+            //int[] array1 = new int[5];
+            //int[] array2 = { 1, 2, 3, 4 };
+
+            ////// 7.1
+            //int[][] arrayOfArrays = new int[5][];
+
+            ////// 7.2
+            //int[,] array2d = new int[3, 3];
             #endregion
 
             Console.ReadKey();
