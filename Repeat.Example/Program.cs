@@ -201,6 +201,8 @@ namespace Repeat.Example
 
             ////// 7.2
             //int[,] array2d = new int[3, 3];
+
+            System.Console.WriteLine("Deneme");
             #endregion
 
             Console.ReadKey();
