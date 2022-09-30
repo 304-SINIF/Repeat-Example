@@ -105,6 +105,92 @@ namespace Repeat.Example
             //Console.WriteLine(sb.ToString());
             #endregion
 
+            #region Try-Catch-Finally (5.0)
+
+            //try
+            //{
+
+            //}
+            //catch
+            //{
+
+            //}
+
+            //// 5.1
+            //try
+            //{
+            //    int x = int.Parse(Console.ReadLine());
+            //    int y = 10;
+            //    Console.WriteLine(y / x);
+            //}
+            //catch (FormatException)
+            //{
+            //    Console.WriteLine("Girdi bir sayı değildi");
+            //}
+            //catch (DivideByZeroException)
+            //{
+            //    Console.WriteLine("Sıfıra bölünme denemesi yapıldı");
+            //}
+            //catch (Exception)
+            //{
+            //    Console.WriteLine("Bilinmeyen bir hata oluştu");
+            //}
+
+            //// 5.2
+            //try
+            //{
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+
+            //// 5.3
+            //try
+            //{
+
+            //}
+            //catch
+            //{
+
+            //}
+            //finally
+            //{
+
+            //}
+            #endregion
+
+            #region Loops (6.0)
+
+            ////6.1
+
+            //int i = 0;
+            //while (i < 10)
+            //{
+            //    Console.WriteLine(i + 1);
+            //    i++;
+            //}
+
+            ////6.2
+
+            //int i = 0;
+            //do
+            //{
+
+            //    i++;
+            //}
+            //while (i < 10);
+
+            //// 6.3
+            
+            //for (int i = 0; i < 10; i++)
+            //{
+
+            //}
+
+            #endregion
+
             Console.ReadKey();
         }
     }

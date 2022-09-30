@@ -57,3 +57,51 @@ Tanımlama formülleri
 				geriye kalan tipler yalnızca tipinin ne olduğunu string bir ifade olarak döndürür
 			4.4.3
 				(eğer ne yapacağını belirtmiş olan bir tip değilse)
+
+5.0
+	"Exception Handling" anlamına gelir, hata fırlatmaya müsait kod blokları için kullanılır. Eğer bu hata rahatlıkla öngörülebiliyor ve Validation yapılabiliyorsa, hatanın bu şekilde çözümü daha uygundur. Ancak hata fırlatmaya müsait bir bloğun öngörülemeyen bir hata fırlatma olasılığı varsa ya da fırlatılan hataların loglama işlemine tabi tutulması gerekiyorsa kullanılması uygundur
+
+	Not: try ve catch kullanmak zorunludur
+
+	5.1
+	catch bloğu parantezleri arasına hata tipi alabilir. Bunun sebebi try-catch bloğu birden fazla catch bloğu barındırabilir. Bu catch bloklarını ayıran, yakaladıkları tiptir. Bunu sağlamak için catch bloğunun parantezleri arasına yakalanacak tip yazılır. Örnekte görüldüğü gibi bu kod bloğu birden fazla hata ile sonuçlanabilir. Eğer format hatası varsa, uygun bir hata mesajı döndürmek için FormatException bloğu kullanılır. DivideByZeroException ise 0'a bölünme durumunda kullanılacaktır.
+
+	Not: Eğer blokta yukarıda yer alan Exception tipi, aşağıda yer alanı kapsıyor ise, program derlenmeyecektir. Örneğin, Exception tipi en aşağıda olmak zorundadır. ArithmeticException, DivideByZeroException bloğunun yukarısında olamaz
+
+	5.2
+	catch bloğunda yalnızca exception tipi değil aynı zamanda exception objeside talep edilebilir. Bu obje içerisinde, hatanın kaynağı, hataya sebep olan (varsa) hatayı, hata mesajı gibi değerler tutar
+
+	5.3
+	"Exception Handling" yapılırken try ve catch yazılmak zorunluyken, dilenirse "finally" bloğu koyulabilir. Bu blok hata olsun olmasın çalışacaktır
+
+6.0
+	Bir döngü 3 öğe barındırır
+		1. Başlangıç değeri (<loop_condition_var>)
+		2. Koşul (<condition>)
+		3. Artış (<loop_condition_var_increment>)
+	Geriye kalan, döngünün kapsamında kalan kod bloğu, döngü devam ettikçe çalıştırılacaktır
+
+	6.1
+	int <loop_condition_var> = <value>;
+	while (<condition>)
+	{
+
+		<loop_condition_var_increment>
+	}
+
+	6.2
+	int <loop_condition_var> = <value>;
+	do
+	{
+
+		<loop_condition_var_increment>
+	}
+	while (<condition>);
+
+	do-while ve while arasındaki fark, do bloğu koşul kontrol edilmeden önce en az bir kez çalıştırılır
+
+	6.3
+	for (<loop_condition_var>; <condition>; <loop_condition_var_increment>)
+	{
+	
+	}
